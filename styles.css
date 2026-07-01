@@ -383,6 +383,36 @@ h3 {
   color: var(--muted);
 }
 
+.news-facts {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.news-facts div {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(217, 222, 232, 0.92);
+}
+
+.news-facts div:last-child {
+  border-bottom: 1px solid rgba(217, 222, 232, 0.92);
+}
+
+.news-facts dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.news-facts dd {
+  margin: 0;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
 .intro .eyebrow {
   color: var(--gold);
 }
@@ -860,6 +890,11 @@ h3 {
   .featured-news h3,
   .news-list h3 {
     font-size: 1.24rem;
+  }
+
+  .news-facts div {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 
   .hero-actions .button,
