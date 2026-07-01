@@ -901,7 +901,7 @@ h3 {
   background: #f7f3ec;
 }
 
-.contact-form {
+.contact-routes {
   display: grid;
   gap: 16px;
   padding: clamp(22px, 4vw, 34px);
@@ -911,34 +911,38 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.contact-form label {
+.contact-routes article {
   display: grid;
-  gap: 7px;
-  color: #263244;
-  font-size: 0.9rem;
-  font-weight: 800;
+  gap: 8px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid #cbd3df;
-  border-radius: 8px;
-  padding: 12px 13px;
-  color: var(--ink);
-  font: inherit;
-  background: #fff;
+.contact-routes article:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
-.contact-form textarea {
-  resize: vertical;
+.contact-routes span {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e6edf8;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.form-note {
+.contact-routes h3,
+.contact-routes p {
   margin: 0;
+}
+
+.contact-routes p {
   color: var(--muted);
-  font-size: 0.88rem;
+  line-height: 1.8;
 }
 
 .footer {
